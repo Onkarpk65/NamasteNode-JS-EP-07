@@ -8,7 +8,7 @@ var b = 209;
 // pbkdf2 - Password Based Key Derivation Function
 
 
-
+// Synchronous function - will BLOCK THE MAIN THREAD - DO NOT USE IT
 crypto.pbkdf2Sync("password", "salt", 5000, 50,"sha512");
 console.log("First key is generated");
 
