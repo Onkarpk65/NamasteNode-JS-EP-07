@@ -124,4 +124,4 @@ call me after 3 seconds
 - **Event loop and CallStack:** The callback function from `setTimeout(0)` is added to the event queue. But, it won't be executed until the current *callstack* is empty. This means that even if we specify a 0 millisecond delay, the callback will only execute after the *global execution context is exhausted*.
 - **Trust Issues with `setTimeout(0)`:** When we ask the code to run after 0 milliseconds, it doesn't necessarily run immediately after that time. 
 - It runs *only when the call stack is empty*.
-- This introduces some "terms and conditions" meaning that the actual execution timing is dependednt on the state of the call stack.
+- This introduces some "terms and conditions" meaning that the actual execution timing is dependent on the state of the call stack.
